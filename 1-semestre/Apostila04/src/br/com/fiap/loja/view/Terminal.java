@@ -79,6 +79,18 @@ public class Terminal {
 
         System.out.println("Novo preço: " + produto.preco);
 
+        //ler a quantidade
+        System.out.println("Quantos itens deseja comprar?");
+        int quantidade = entrada.nextInt();
+
+
+        //calcular o valor total
+        double valorTotal = produto.calcularValorTotal(quantidade);
+
+
+        //exibir o valor total
+        System.out.println("Valor total da compra: "+ valorTotal);
+
 
 
     }

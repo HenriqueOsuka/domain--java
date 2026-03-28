@@ -6,6 +6,7 @@ public class Produto {
     public boolean disponivel;
     public Fornecedor Fornecedor;
     public String nome;
+    public String quantidade;
 
 
     public double calcularDesconto(){
@@ -20,6 +21,11 @@ public class Produto {
 
         //criar um método para calcular o valor total da compra
         //dado a quantidade, calcular o valor da compra
-        
+
+
+        }
+    public double calcularValorTotal(int quantidade){
+        return preco * quantidade;
     }
+
 }
